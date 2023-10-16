@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "comma-number": "^2.1.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/comma-number": "^2.1.0",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
