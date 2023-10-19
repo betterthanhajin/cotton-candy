@@ -18,7 +18,8 @@ export default function ChattingContainer() {
         </div>
         <div>
           <p>
-            <strong>요우</strong>군자동 * 1주전
+            <strong className="mr-2">요우</strong>
+            <span className="text-sm text-[#8C8C8C]">군자동 * 1주전</span>
           </p>
           <p>감사합니다!!조심히가세요!!</p>
         </div>
@@ -37,7 +38,8 @@ export default function ChattingContainer() {
         </div>
         <div>
           <p>
-            <strong>요우</strong>군자동 * 1주전
+            <strong className="mr-2">요우</strong>
+            <span className="text-sm text-[#8C8C8C]">군자동 * 1주전</span>
           </p>
           <p>감사합니다!!조심히가세요!!</p>
         </div>
@@ -56,7 +58,8 @@ export default function ChattingContainer() {
         </div>
         <div>
           <p>
-            <strong>요우</strong>군자동 * 1주전
+            <strong className="mr-2">요우</strong>
+            <span className="text-sm text-[#8C8C8C]">군자동 * 1주전</span>
           </p>
           <p>감사합니다!!조심히가세요!!</p>
         </div>
@@ -75,7 +78,8 @@ export default function ChattingContainer() {
         </div>
         <div>
           <p>
-            <strong>요우</strong>군자동 * 1주전
+            <strong className="mr-2">요우</strong>
+            <span className="text-sm text-[#8C8C8C]">군자동 * 1주전</span>
           </p>
           <p>감사합니다!!조심히가세요!!</p>
         </div>
@@ -94,7 +98,8 @@ export default function ChattingContainer() {
         </div>
         <div>
           <p>
-            <strong>요우</strong>군자동 * 1주전
+            <strong className="mr-2">요우</strong>
+            <span className="text-sm text-[#8C8C8C]">군자동 * 1주전</span>
           </p>
           <p>감사합니다!!조심히가세요!!</p>
         </div>
