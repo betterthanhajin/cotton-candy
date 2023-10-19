@@ -5,7 +5,7 @@ import ListViewer from '@/components/list-viewer'
 export default function ListPage() {
   return (
     <main className="w-full h-full flex flex-col">
-      <ListHeader />
+      <ListHeader localName="고잔동" />
       <ListViewer />
       <ListFooter />
     </main>
