@@ -2,10 +2,12 @@ import Image from 'next/image'
 
 interface DetailContainerProps {
   username: string
+  localname: string
+  boardtitle: string
 }
 
 export default function DetailContainer(props: DetailContainerProps) {
-  const { username } = props
+  const { username, localname, boardtitle } = props
   return (
     <div className="w-full bg-white p-4">
       <div className="flex justify-between w-full gap-2 bg-white pb-4 border-b border-[#EEEEEE]">
@@ -20,8 +22,8 @@ export default function DetailContainer(props: DetailContainerProps) {
             />
           </div>
           <div>
-            <h1>{username}</h1>
-            <h3 className="text-[#4F4F4F]">중랑구 면목동</h3>
+            <h1 className="font-bold">{username}</h1>
+            <h3 className="text-[#4F4F4F]">{localname}</h3>
           </div>
         </div>
         <div>
@@ -38,7 +40,7 @@ export default function DetailContainer(props: DetailContainerProps) {
         </div>
       </div>
       <div className="p-2 leading-12 mt-4 border-b border-[#EEEEEE] pb-4">
-        <h2 className="font-bold text-lg text">소니 Wh-1000xm5 실버 팝니다.</h2>
+        <h2 className="font-bold text-lg text">{boardtitle}</h2>
         <p className="text-[#8C8C8C] text-sm mt-2 mb-4">
           <span className="underline">디지털기기</span> * 끌올 1일 전
         </p>
@@ -63,7 +65,7 @@ export default function DetailContainer(props: DetailContainerProps) {
         </div>
       </div>
       <div className="flex p-2 w-full justify-between items-center py-4">
-        <div className="font-bold">감성탐방러님의 판매 상품</div>
+        <div className="font-bold">{username}님의 판매 상품</div>
         <div>
           <Image
             src="/icon/moreView.svg"
