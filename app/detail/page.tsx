@@ -1,10 +1,12 @@
 import DetailContainer from '@/components/detail-container'
 import DetailFooter from '@/components/detail-footer'
+import DetailHeader from '@/components/detail-header'
 import DetailSlider from '@/components/detail-slider'
 
 export default function DetailPage() {
   return (
     <main className="w-full h-full flex flex-col">
+      <DetailHeader />
       <DetailSlider />
       <DetailContainer
         username="감성탐방러"
