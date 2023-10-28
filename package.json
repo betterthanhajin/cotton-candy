@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "comma-number": "^2.1.0",
+    "framer-motion": "^10.16.4",
     "next": "latest",
+    "notiflix": "^3.2.6",
     "react": "latest",
     "react-dom": "latest"
   },
