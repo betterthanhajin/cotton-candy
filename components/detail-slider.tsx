@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function DetailSlider() {
   return (
     <div>
-      <Image
-        src="/icon/head.jpeg"
+      <img
+        src="/mock/item5.jpeg"
         alt="detailImage"
         width={380}
         height={395}
