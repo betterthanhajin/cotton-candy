@@ -1,3 +1,4 @@
+import { todoAlert } from '@/lib/todo'
 import Image from 'next/image'
 
 interface DetailContainerProps {
@@ -11,7 +12,12 @@ export default function DetailContainer(props: DetailContainerProps) {
   return (
     <div className="w-full bg-white p-4">
       <div className="flex justify-between w-full gap-2 bg-white pb-4 border-b border-[#EEEEEE]">
-        <div className="flex gap-2">
+        <button
+          className="flex gap-2 items-center"
+          onClick={() => {
+            todoAlert()
+          }}
+        >
           <div>
             <Image
               className="ml-2"
@@ -23,10 +29,14 @@ export default function DetailContainer(props: DetailContainerProps) {
           </div>
           <div>
             <h1 className="font-bold">{username}</h1>
-            <h3 className="text-[#4F4F4F]">{localname}</h3>
+            <h3 className="text-[#4F4F4F] text-left">{localname}</h3>
           </div>
-        </div>
-        <div>
+        </button>
+        <button
+          onClick={() => {
+            todoAlert()
+          }}
+        >
           <h1 className="flex gap-1">
             <span className="text-[#4AC1DB]">37.2°C</span>
             <div className="flex items-end">
@@ -37,12 +47,20 @@ export default function DetailContainer(props: DetailContainerProps) {
             <div className="w-6 h-1 bg-[#4AC1DB] rounded-md"></div>
           </div>
           <h3 className="underline text-gray-400 text-[14px]">매너온도</h3>
-        </div>
+        </button>
       </div>
       <div className="p-2 leading-12 mt-4 border-b border-[#EEEEEE] pb-4">
         <h2 className="font-bold text-lg text">{boardtitle}</h2>
         <p className="text-[#8C8C8C] text-sm mt-2 mb-4">
-          <span className="underline">디지털기기</span> * 끌올 1일 전
+          <span
+            className="underline cursor-pointer"
+            onClick={() => {
+              todoAlert()
+            }}
+          >
+            봉제인형류
+          </span>{' '}
+          * 끌올 1일 전
         </p>
         <div className="leading-6">
           8/31일 해외직구한
@@ -53,7 +71,12 @@ export default function DetailContainer(props: DetailContainerProps) {
         </div>
         <div className="text-[#8C8C8C] text-sm mt-4">관심 15 * 조회 311</div>
       </div>
-      <div className="flex p-2 w-full justify-between items-center border-b border-[#EEEEEE] py-4">
+      <button
+        className="flex p-2 w-full justify-between items-center border-b border-[#EEEEEE] py-4"
+        onClick={() => {
+          todoAlert()
+        }}
+      >
         <div className="font-bold">이 게시글 신고하기</div>
         <div>
           <Image
@@ -63,8 +86,13 @@ export default function DetailContainer(props: DetailContainerProps) {
             height={14}
           />
         </div>
-      </div>
-      <div className="flex p-2 w-full justify-between items-center py-4">
+      </button>
+      <button
+        className="flex p-2 w-full justify-between items-center py-4"
+        onClick={() => {
+          todoAlert()
+        }}
+      >
         <div className="font-bold">{username}님의 판매 상품</div>
         <div>
           <Image
@@ -74,7 +102,7 @@ export default function DetailContainer(props: DetailContainerProps) {
             height={14}
           />
         </div>
-      </div>
+      </button>
       <DetailRecommendItem />
     </div>
   )
@@ -83,28 +111,42 @@ export default function DetailContainer(props: DetailContainerProps) {
 function DetailRecommendItem() {
   return (
     <div className="flex gap-4 w-full">
-      <div className="p-2 w-1/2">
-        <Image
-          src="/icon/item_01.svg"
+      <button
+        className="p-2 w-1/2"
+        onClick={() => {
+          todoAlert()
+        }}
+      >
+        <img
+          src="/mock/item6.jpeg"
           alt="moreView"
           width={170}
           height={170}
-          className="w-full"
+          className="w-full max-h-[180px] rounded-lg object-cover"
         />
-        <h2 className="mt-2 text-ellipsis truncate">에어팟 미개봉</h2>
-        <p className="font-bold">240,000원</p>
-      </div>
-      <div className="p-2 w-1/2">
-        <Image
-          src="/icon/item_01.svg"
+        <h2 className="mt-2 text-ellipsis truncate text-left">
+          ANBER 고양이 바디필로우
+        </h2>
+        <p className="font-bold text-left">37,580원</p>
+      </button>
+      <button
+        className="p-2 w-1/2"
+        onClick={() => {
+          todoAlert()
+        }}
+      >
+        <img
+          src="/mock/item2.jpeg"
           alt="moreView"
           width={170}
           height={170}
-          className="w-full"
+          className="w-full max-h-[180px] rounded-lg object-cover"
         />
-        <h2 className="mt-2 text-ellipsis truncate">에어팟 미개봉</h2>
-        <p className="font-bold">240,000원</p>
-      </div>
+        <h2 className="mt-2 text-ellipsis truncate text-left">
+          모찌 시바견 애착인형
+        </h2>
+        <p className="font-bold text-left">9,2500원</p>
+      </button>
     </div>
   )
 }
