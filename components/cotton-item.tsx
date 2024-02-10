@@ -40,7 +40,7 @@ export default function CottonItem(props: CottonItemProps) {
             </h1>
             <span className="text-xs text-gray-600">
               <data>
-                {localName ?? '고잔동'} · {createdAt ?? '3'}
+                {localName ?? '고잔동'} · {createdAt ?? '-'}
               </data>
             </span>
             <div className="text-orange-500">
